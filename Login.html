@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 id="page-title">Login</h1>
+        </div>
+        <img src="C:\Users\user\Downloads\Screenshot_2024-12-22_203951-removebg-preview.png" alt="Globe Icon" class="globe-icon">
+    </header>
+
+     <!-- Navigation Section -->
+     <nav class="navigation">
+        <ul class="navigation-buttons">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="aboutus.html">Over Ons</a></li>
+            <li><div class="header-right">
+                <!-- Search Bar -->
+                <input type="text" id="searchBar" placeholder="Search...">
+                <button onclick="searchProducts()">Search</button>
+        
+                <!-- Cart Icon -->
+                <a href="javascript:void(0);" class="cart-icon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+            </div></li>
+            <li>
+                <div class="nav-item">
+                    <button class="nav-button dropdown-toggle" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Selected Language" class="flag-icon">
+                        <span>Taal</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#" data-lang="en">
+                            <img src="https://static.vecteezy.com/system/resources/previews/005/416/914/original/flag-of-united-kingdom-illustration-free-vector.jpg" alt="English Flag" class="flag-icon"> English
+                        </a>
+                        <a class="dropdown-item" href="#" data-lang="nl">
+                            <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Dutch Flag" class="flag-icon"> Nederlands
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <u1 class="navigation-buttons">
+            <li><a href="toiletries.html">Verzorging</a></li>
+            <li><a href="cleaning.html">Schoonmaak</a></li>
+            <li><a href="makeup.html">Make-Up</a></li>
+            <li><a href="essentials.html">Benodigdheden</a></li>
+
+        </ul>
+        
+    </nav>
+
+    <!-- Login Form Section -->
+    <div class="login-page">
+        <div class="login-card">
+            <h2>Welkom Terug!</h2>
+            <p>Log hier in bij uw account.</p>
+            <form action="login_handler.php" method="POST">
+                <label for="username">Gebruikersnaam</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Wachtwoord</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="btn-primary">Log In</button>
+            </form>
+
+            <div class="signup-text">
+                <p>Heb je nog geen account?</p>
+                <p> <a href="signup.html">Registreren</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

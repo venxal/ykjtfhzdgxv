@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gepersonaliseerde Abonnementen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1 id="page-title">Gepersonaliseerde Abonnementen</h1>
+            <p class="tagline" id="tagline">Al uw benodigdheden, waar en wanneer u wilt.</p>
+            <a href="#about" class="cta-button" id="cta-button">Ontdek Meer</a>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="navigation">
+        <ul class="navigation-buttons">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="aboutus.html">Over Ons</a></li>
+            <li>
+                <div class="header-right">
+                    <!-- Search Bar -->
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button onclick="searchProducts()">Search</button>
+                </div>
+            </li>
+            <li>
+                <!-- Cart Icon -->
+                <a href="javascript:void(0);" class="cart-icon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+            </li>
+            <li>
+                <div class="nav-item dropdown">
+                    <button class="nav-button dropdown-toggle" id="languageDropdown">
+                        <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Selected Language" class="flag-icon">
+                        <span id="selectedLanguage">Taal</span>
+                    </button>
+                    <ul class="dropdown-menu" id="languageMenu">
+                        <li>
+                            <a href="#" class="dropdown-item" data-lang="en">
+                                <img src="https://static.vecteezy.com/system/resources/previews/005/416/914/original/flag-of-united-kingdom-illustration-free-vector.jpg" alt="English Flag" class="flag-icon"> English
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item" data-lang="nl">
+                                <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Dutch Flag" class="flag-icon"> Nederlands
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            
+        </ul>
+        <ul class="navigation-buttons">
+            <li><a href="toiletries.html">Verzorging</a></li>
+            <li><a href="cleaning.html">Schoonmaak</a></li>
+            <li><a href="makeup.html">Make-Up</a></li>
+            <li><a href="essentials.html">Benodigdheden</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="content-container">
+            <h2 id="about-title">Welkom bij onze Gepersonaliseerde Abonnementen</h2>
+            <p id="about-text">
+                Wij leveren zorgvuldig samengestelde alledaagse benodigdheden rechtstreeks bij jou thuis.
+                Van premium schoonmaakartikelen tot duurzame verzorgingsproducten, wij zorgen dat je nooit misgrijpt.
+            </p>
+            <p id="about-text2">
+                Bij Gepersonaliseerde Abonnementen geloven we dat jouw tijd kostbaar is. Daarom stellen we zorgvuldig alledaagse benodigdheden samen en bezorgen we ze rechtstreeks bij jou aan de deur. Of het nu gaat om schoonmaakproducten, toiletartikelen, make-up of dagelijkse benodigdheden, onze service is afgestemd op jouw behoeften en geleverd volgens een schema dat bij jou past.
+            </p>
+            <div class="features">
+                <div class="feature">
+                    <h3 id="feature1-title">Persoonlijke Service</h3>
+                    <p id="feature1-text">Aanpasbare boxen afgestemd op jouw voorkeuren en levensstijl.</p>
+                </div>
+                <div class="feature">
+                    <h3 id="feature2-title">Duurzaamheid</h3>
+                    <p id="feature2-text">Kies voor milieuvriendelijke en hoogwaardige producten.</p>
+                </div>
+                <div class="feature">
+                    <h3 id="feature3-title">Gemak</h3>
+                    <p id="feature3-text">Bezorgopties afgestemd op jouw schema!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products Section -->
+    <section class="products-section">
+        <h2 id="products-title">Populaire Producten</h2>
+        <div class="products-grid">
+            <!-- Product Cards -->
+            <div class="product-card">
+                <a href="toiletries.html">
+                    <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/15274324-5045158719189258.jpg" alt="Verzorgingsproduct">
+                    <h4>Oral-B Tandpasta</h4>
+                    <p>Houd je tanden gezond met onze premium tandpasta.</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="cleaning.html">
+                    <img src="https://m.media-amazon.com/images/I/71YXzKGSO6L._AC_SL1500_.jpg" alt="Schoonmaakproduct">
+                    <h4>Marcel's Green Soap Afwasmiddel</h4>
+                    <p>Duurzame schoonmaakmiddelen voor een schone toekomst.</p>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="makeup.html">
+                    <img src="https://media.s-bol.com/xzWVGXlpp78B/5K4P88/550x553.jpg" alt="Make-up product">
+                    <h4>Maybelline Concealer</h4>
+                    <p>Alles wat je nodig hebt voor een perfecte look.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart hidden">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p id="footer-text">&copy; 2024 Gepersonaliseerde Abonnementen. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

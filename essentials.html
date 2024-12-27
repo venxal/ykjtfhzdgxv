@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benodigdheden</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Benodigdheden</h1>
+        <p class="curated-text">De populairste benodigdheden op dit moment.</p>
+        <p>Heeft u suggesties voor nieuwe artikelen? Geef dit dan graag aan ons door!</p>
+    </header>
+
+        <!-- Navigation Section -->
+        <nav class="navigation">
+            <ul class="navigation-buttons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="aboutus.html">Over Ons</a></li>
+                <li><div class="header-right">
+                    <!-- Search Bar -->
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button onclick="searchProducts()">Search</button>
+            
+                    <!-- Cart Icon -->
+                    <a href="javascript:void(0);" class="cart-icon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+                </div></li>
+                <li>
+                    <div class="nav-item">
+                        <button class="nav-button dropdown-toggle" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Selected Language" class="flag-icon">
+                            <span>Taal</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#" data-lang="en">
+                                <img src="https://static.vecteezy.com/system/resources/previews/005/416/914/original/flag-of-united-kingdom-illustration-free-vector.jpg" alt="English Flag" class="flag-icon"> English
+                            </a>
+                            <a class="dropdown-item" href="#" data-lang="nl">
+                                <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Dutch Flag" class="flag-icon"> Nederlands
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <u1 class="navigation-buttons">
+                <li><a href="toiletries.html">Verzorging</a></li>
+                <li><a href="cleaning.html">Schoonmaak</a></li>
+                <li><a href="makeup.html">Make-Up</a></li>
+                <li><a href="essentials.html">Benodigdheden</a></li>
+    
+            </ul>
+            
+        </nav>
+
+    <div class="items-grid">
+        <!-- Item 1 -->
+        <div class="item-card">
+            <img src="https://media.s-bol.com/RJKL3L9wq1wY/QWkx9B5/550x402.jpg" alt="Keukenrol">
+            <h4>Keukenpapier</h4>
+            <p>Deze sterke, zachte en absorberende keukenrol is geschikt voor alledaagse poetstaken, zoals schoonmaken, het afnemen van oppervlakken en het verwijderen van water, olie of voedselresten.
+            </p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €32</button>
+                <button data-frequency="biweekly">Tweewekelijks: €35</button>
+                <button data-frequency="monthly">Maandelijks: €37</button>
+            </div>
+        </div>
+        
+        <!-- Item 2 -->
+        <div class="item-card">
+            <img src="https://media.s-bol.com/nPomEA7QXWzl/JJX4PD/550x402.jpg" alt="Afvalzakken">
+            <h4>KOMO Afvalzakken</h4>
+            <p>KOMO afvalzakken met trekband hebben een inhoud van 60 liter. De afvalzakken zijn grijs van kleur en zijn gemaakt van LDPE. Op een rol zitten 15 afvalzakken.</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €19,50</button>
+                <button data-frequency="biweekly">Tweewekelijks: €22,00</button>
+                <button data-frequency="monthly">Maandelijks: €25,00</button>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item-card">
+            <img src="https://media.s-bol.com/yyzQggDAxN4R/rk21WV4/550x550.jpg" alt="toiletpapier">
+            <h4>Toiletpapier</h4>
+            <p>Een perfecte hygiëne met de 5 zachte lagen.
+                Dikkere en grotere vellen en extra soepelheid zorgen voor een optimaal comfort.
+                100% zuivere cellulosewatten.
+                FSC-certifieerd product.
+                Papieren Verpakking
+                </p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €32</button>
+                <button data-frequency="biweekly">Tweewekelijks: €35</button>
+                <button data-frequency="monthly">Maandelijks: €37</button>
+            </div>
+        </div>
+
+
+
+        <!-- Item 4 -->
+        <div class="item-card">
+            <img src="c:\Users\user\Pictures\Screenshots\Screenshot 2024-12-22 192956.png" alt="Dove Pakket">
+            <h4>Dove Pakket</h4>
+            <p>Deodorant en Douchegel. Dit Dove pakket bevat alles wat je nodig hebt voor de bescherming van je oksels en huid tegen transpirantie en uitdroging.</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €27,45</button>
+                <button data-frequency="biweekly">Tweewekelijks: €30,00</button>
+                <button data-frequency="monthly">Maandelijks: €35,00</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

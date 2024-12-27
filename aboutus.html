@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Ons - Gepersonaliseerde Abbonementen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Over Ons</h1>
+            <p>Persoonlijke abonnementen voor jouw dagelijkse benodigdheden.</p>
+        </div>
+    </header>
+
+
+   <!-- Navigation Section -->
+   <nav class="navigation">
+    <ul class="navigation-buttons">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="aboutus.html">Over Ons</a></li>
+        <li><div class="header-right">
+            <!-- Search Bar -->
+            <input type="text" id="searchBar" placeholder="Search...">
+            <button onclick="searchProducts()">Search</button>
+    
+            <!-- Cart Icon -->
+            <a href="javascript:void(0);" class="cart-icon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+        </div></li>
+        <li>
+            <div class="nav-item">
+                <button class="nav-button dropdown-toggle" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Selected Language" class="flag-icon">
+                    <span>Taal</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <a class="dropdown-item" href="#" data-lang="en">
+                        <img src="https://static.vecteezy.com/system/resources/previews/005/416/914/original/flag-of-united-kingdom-illustration-free-vector.jpg" alt="English Flag" class="flag-icon"> English
+                    </a>
+                    <a class="dropdown-item" href="#" data-lang="nl">
+                        <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Dutch Flag" class="flag-icon"> Nederlands
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <u1 class="navigation-buttons">
+        <li><a href="toiletries.html">Verzorging</a></li>
+        <li><a href="cleaning.html">Schoonmaak</a></li>
+        <li><a href="makeup.html">Make-Up</a></li>
+        <li><a href="essentials.html">Benodigdheden</a></li>
+
+    </ul>
+    
+</nav>
+
+
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="about-content">
+            <h2>Onze Missie</h2>
+            <p>
+                Bij Gepersonaliseerde Abbonementen is het onze missie om jouw dagelijkse routine moeiteloos en efficiënt te maken. Wij begrijpen dat in een drukke wereld, tijd een van de meest waardevolle middelen is. Daarom bieden we een service die verder gaat dan alleen het leveren van producten: we leveren gemak, persoonlijke aandacht en betrouwbaarheid, direct aan jouw deur.
+            </p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/1584/1584799.png" alt="Tijdbesparing">
+                <h3>Tijdbesparing</h3>
+                <p>Geen onnodige winkelbezoeken meer. Wij zorgen ervoor dat je altijd hebt wat je nodig hebt.Of je nu een gezin runt, een drukke professional bent, of gewoon tijd wilt besparen, wij zorgen ervoor dat je altijd voorzien bent van de producten die je nodig hebt, zonder het gedoe van boodschappen doen.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn4.iconfinder.com/data/icons/miscellaneous-5-2/128/customizable_flexible_custom-1024.png" alt="Persoonlijk">
+                <h3>Persoonlijk</h3>
+                <p>Elke klant is uniek, en dat begrijpen wij. Daarom nemen we de tijd om jouw voorkeuren, gewoontes en behoeften te leren kennen. Jouw comfort en tevredenheid staan bij ons centraal.</p>
+            </div>
+            <div class="feature">
+                <img src="https://th.bing.com/th/id/R.a3eede07cce65e687591c27119ce9645?rik=JUPmC1q7qVHM4A&pid=ImgRaw&r=0" alt="Betrouwbaar">
+                <h3>Betrouwbaar</h3>
+                <p>Bij ons kan je rekenen op consistentie en betrouwbaarheid. Onze flexibele bezorgschema's zorgen ervoor dat je nooit zonder je dagelijkse benodigdheden komt te zitten. Of je nu kiest voor een wekelijkse, tweewekelijkse of maandelijkse levering, wij garanderen dat je box altijd op tijd en in perfecte staat aankomt. Je kunt vertrouwen op onze service, zodat je je volledig kunt richten op wat echt belangrijk is in jouw leven.</p>
+            </div>
+
+            <div class="feature">
+                <img src="https://th.bing.com/th/id/R.0232ef8f22bd981c6fe59c235a4e40a2?rik=u3DivfqtAOzrdg&pid=ImgRaw&r=0" alt="Persoonlijk">
+                <h3>Duurzaamheid</h3>
+                <p>We streven ernaar om producten te selecteren die vriendelijk zijn voor jou en voor de planeet. Met onze focus op eco-vriendelijke opties helpen we je niet alleen je huis, maar ook de wereld een stukje beter te maken.</p>
+            </div>
+
+            <div class="feature">
+                <img src="https://cdn4.iconfinder.com/data/icons/reputation-management-1-1/66/32-1024.png" alt="Persoonlijk">
+                <h3>Innovatie</h3>
+                <p>Wij blijven continu innoveren om onze service beter te maken, zodat jij altijd de meest efficiënte en moderne oplossing krijgt voor jouw dagelijkse benodigdheden.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Essentials Subscription Service. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

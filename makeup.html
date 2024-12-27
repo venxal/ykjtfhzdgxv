@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+    <header class="header">
+        <h1>Make-Up</h1>
+        <p class="curated-text">De populairste make-up artikelen op dit moment.</p>
+        <p>Heeft u suggesties voor nieuwe artikelen? Geef dit dan graag aan ons door!</p>
+    </header>
+
+
+
+        <!-- Navigation Section -->
+        <nav class="navigation">
+            <ul class="navigation-buttons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="aboutus.html">Over Ons</a></li>
+                <li><div class="header-right">
+                    <!-- Search Bar -->
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button onclick="searchProducts()">Search</button>
+            
+                    <!-- Cart Icon -->
+                    <a href="javascript:void(0);" class="cart-icon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+                </div></li>
+                <li>
+                    <div class="nav-item">
+                        <button class="nav-button dropdown-toggle" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Selected Language" class="flag-icon">
+                            <span>Taal</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#" data-lang="en">
+                                <img src="https://static.vecteezy.com/system/resources/previews/005/416/914/original/flag-of-united-kingdom-illustration-free-vector.jpg" alt="English Flag" class="flag-icon"> English
+                            </a>
+                            <a class="dropdown-item" href="#" data-lang="nl">
+                                <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Dutch Flag" class="flag-icon"> Nederlands
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <u1 class="navigation-buttons">
+                <li><a href="toiletries.html">Verzorging</a></li>
+                <li><a href="cleaning.html">Schoonmaak</a></li>
+                <li><a href="makeup.html">Make-Up</a></li>
+                <li><a href="essentials.html">Benodigdheden</a></li>
+    
+            </ul>
+            
+        </nav>
+
+    <div class="items-grid">
+        <!-- Item 1 -->
+        <div class="item-card">
+            <img src="https://media.s-bol.com/JjOornXVJ12D/7PxXP1/550x550.jpg" alt="Make-up doekjes">
+            <h4>Reinigingsdoekjes</h4>
+            <p>NIVEA Reinigingsdoekjes voor de gevoelige huid verrijkt met dexpanthenol. Verwijderen effectief waterproof make-up en mascara, zodat je huid zacht en gehydrateerd aanvoelt. De ongeparfumeerde en alcoholvrije formule is zeer geschikt voor de gevoelige huid.</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €12</button>
+                <button data-frequency="biweekly">Tweewekelijks: €14</button>
+                <button data-frequency="monthly">Maandelijks: €16</button>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item-card">
+            <img src="https://media.s-bol.com/xzWVGXlpp78B/5K4P88/550x553.jpg" alt="Concealer">
+            <h4>Maybeline Concealer</h4>
+            <p>Maak kennis met Instant Perfector Glow van Maybelline New York. De eerste 4-in-1 make-up voor een direct stralende look. Instant Perfector Glow biedt je huid de voordelen van vier producten in één. Creëer de look van een primer, concealer, highlighter en BB-crème in één eenvoudige stap. De revolutionaire lichte vegan* formule vervaagt, camoufleert, accentueert en egaliseert de huid met een lichte dekking.</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €12</button>
+                <button data-frequency="biweekly">Tweewekelijks: €15</button>
+                <button data-frequency="monthly">Maandelijks: €19</button>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item-card">
+            <img src="https://media.s-bol.com/RwAzPGkzrN4z/J6XWAXK/550x550.jpg" alt="Mascara">
+            <h4>Maybelline Mascara</h4>
+            <p>De Lash Sensational Sky High mascara van Maybelline New York is een lengte mascara die daarnaast zorgt voor natuurlijk ogend volume. Het flexibele, kunststof-borsteltje heeft de vorm van een punt zodat zelfs de kleinste en kortste wimperhaartjes worden meegenomen. Deze puntvormige borstel is bij uitstek geschikt om korte wimperharen lengte te geven, wimpers lijken langer vanuit elke hoek.</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €13,00</button>
+                <button data-frequency="biweekly">Tweewekelijks: €15,00</button>
+                <button data-frequency="monthly">Maandelijks: €17,00</button>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="item-card">
+            <img src="https://images.wehkamp.nl/i/wehkamp/507018_pb_01/bourjois-little-round-pot-blush-ambre-d-or-3614225613326.jpg?w=792&h=792&qlt=75&fit=contain" alt="Blush">
+            <h4>Little Round Pot blush</h4>
+            <p>Bourjois Little Round Pot Blush geeft je gezicht een gezonde, kleurrijke touch. De luxe blush bevat ook een ingebouwd spiegeltje en mini blush kwast. Super handig voor in je handtas. Daarnaast staat de Bourjois Little Round Pot Blush bekend om het langdurige resultaat! Dit compacte doosje bevat een handig kwastje om de blush mee aan te brengen en een spiegel. Deze lijn van Bourjous komt in meerdere kleuren zodat er voor ieder huidtype een juiste kleur blush is.</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €9</button>
+                <button data-frequency="biweekly">Tweewekelijks: €11</button>
+                <button data-frequency="monthly">Maandelijks: €13</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

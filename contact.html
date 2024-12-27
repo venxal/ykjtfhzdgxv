@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Desk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Service Desk</h1>
+            <p class="curated-text">Heb je vragen? Neem gerust contact met ons op!</p>
+            <p>Wij zijn hier om je te helpen met je vragen en opmerkingen!</p>
+        </div>
+    </header>
+
+        <!-- Navigation Section -->
+        <nav class="navigation">
+            <ul class="navigation-buttons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="aboutus.html">Over Ons</a></li>
+                <li><div class="header-right">
+                    <!-- Search Bar -->
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button onclick="searchProducts()">Search</button>
+            
+                    <!-- Cart Icon -->
+                    <a href="javascript:void(0);" class="cart-icon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+                </div></li>
+                <li>
+                    <div class="nav-item">
+                        <button class="nav-button dropdown-toggle" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Selected Language" class="flag-icon">
+                            <span>Taal</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#" data-lang="en">
+                                <img src="https://static.vecteezy.com/system/resources/previews/005/416/914/original/flag-of-united-kingdom-illustration-free-vector.jpg" alt="English Flag" class="flag-icon"> English
+                            </a>
+                            <a class="dropdown-item" href="#" data-lang="nl">
+                                <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Dutch Flag" class="flag-icon"> Nederlands
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <u1 class="navigation-buttons">
+                <li><a href="toiletries.html">Verzorging</a></li>
+                <li><a href="cleaning.html">Schoonmaak</a></li>
+                <li><a href="makeup.html">Make-Up</a></li>
+                <li><a href="essentials.html">Benodigdheden</a></li>
+    
+            </ul>
+            
+        </nav>
+
+
+        <section class="contact-form-section">
+            <h2>Contactformulier</h2>
+            <form id="contact-form">
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required placeholder="Voer je naam in">
+        
+                <label for="email">E-mailadres:</label>
+                <input type="email" id="email" name="email" required placeholder="Voer je e-mailadres in">
+        
+                <label for="subject">Onderwerp:</label>
+                <input type="text" id="subject" name="subject" required placeholder="Onderwerp van je bericht">
+        
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Schrijf je bericht hier..."></textarea>
+        
+                <button type="submit">Verzenden</button>
+            </form>
+            <div id="form-feedback"></div>
+        </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Gepersonaliseerde Abonnementen. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

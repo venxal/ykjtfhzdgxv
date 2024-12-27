@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Desk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Veelgestelde Vragen (FAQ)</h1>
+            <p class="curated-text" src="contact.html">Heb je andere vragen, neem dan contact met ons op!</p>
+            <p>Wij zijn hier om je te helpen met je vragen en opmerkingen!</p>
+        </div>
+    </header>
+
+        <!-- Navigation Section -->
+        <nav class="navigation">
+            <ul class="navigation-buttons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="aboutus.html">Over Ons</a></li>
+                <li><div class="header-right">
+                    <!-- Search Bar -->
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button onclick="searchProducts()">Search</button>
+            
+                    <!-- Cart Icon -->
+                    <a href="javascript:void(0);" class="cart-icon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+                </div></li>
+                <li>
+                    <div class="nav-item">
+                        <button class="nav-button dropdown-toggle" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Selected Language" class="flag-icon">
+                            <span>Taal</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#" data-lang="en">
+                                <img src="https://static.vecteezy.com/system/resources/previews/005/416/914/original/flag-of-united-kingdom-illustration-free-vector.jpg" alt="English Flag" class="flag-icon"> English
+                            </a>
+                            <a class="dropdown-item" href="#" data-lang="nl">
+                                <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Dutch Flag" class="flag-icon"> Nederlands
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <u1 class="navigation-buttons">
+                <li><a href="toiletries.html">Verzorging</a></li>
+                <li><a href="cleaning.html">Schoonmaak</a></li>
+                <li><a href="makeup.html">Make-Up</a></li>
+                <li><a href="essentials.html">Benodigdheden</a></li>
+    
+            </ul>
+            
+        </nav>
+        
+        <!-- Main Content -->
+    <main class="main-container">
+        <div class="faq-contact-container">
+        <section class="faq-section">
+            <h2>Veelgestelde Vragen</h2>
+            <ul>
+                <li>Is er een minimaal bestelbedrag? <span>Ja, het minimale bestelbedrag is €15.</span></li>
+                <li>Kan ik mijn bezorgmoment nog wijzigen? <span>Ja, je kunt het bezorgmoment tot 24 uur voor levering aanpassen via je account.</span></li>
+                <li>Kan ik nog producten toevoegen of verwijderen nadat ik al heb besteld? <span>Je kunt je bestelling aanpassen tot 12 uur voor verzending.</span></li>
+            </ul>
+        </section>
+</div>

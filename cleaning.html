@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Schoonmaakartikelen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="cleaning-page">
+    <header class="header">
+        <h1 id="page-title">Schoonmaakartikelen</h1>
+        <p class="curated-text" id="curated-text">De populairste schoonmaakartikelen op dit moment.</p>
+        <p id="suggestion-text">Heeft u suggesties voor nieuwe artikelen? Geef dit dan graag aan ons door!</p>
+    </header>
+
+
+    <!-- Navigation Section -->
+    <nav class="navigation">
+        <ul class="navigation-buttons">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="aboutus.html">Over Ons</a></li>
+            <li><div class="header-right">
+                <!-- Search Bar -->
+                <input type="text" id="searchBar" placeholder="Search...">
+                <button onclick="searchProducts()">Search</button>
+        
+                <!-- Cart Icon -->
+                <a href="javascript:void(0);" class="cart-icon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+            </div></li>
+            <li>
+                <div class="nav-item">
+                    <button class="nav-button dropdown-toggle" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Selected Language" class="flag-icon">
+                        <span>Taal</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#" data-lang="en">
+                            <img src="https://static.vecteezy.com/system/resources/previews/005/416/914/original/flag-of-united-kingdom-illustration-free-vector.jpg" alt="English Flag" class="flag-icon"> English
+                        </a>
+                        <a class="dropdown-item" href="#" data-lang="nl">
+                            <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Dutch Flag" class="flag-icon"> Nederlands
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <u1 class="navigation-buttons">
+            <li><a href="toiletries.html">Verzorging</a></li>
+            <li><a href="cleaning.html">Schoonmaak</a></li>
+            <li><a href="makeup.html">Make-Up</a></li>
+            <li><a href="essentials.html">Benodigdheden</a></li>
+
+        </ul>
+        
+    </nav>
+
+
+<div> </div>
+
+    <section id="cart" class="cart hidden">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+    </section>
+
+    <div class="items-grid">
+        <!-- Item 1 -->
+        <div class="item-card">
+            <img src="https://media.s-bol.com/LVw7PA63g7rp/0RAGN8N/550x569.jpg" alt="Allesreiniger">
+            <h4 class="product-title">Allesreiniger Spray</h4>
+            <p class="product-description">Het laat een zichtbare glans achter en verfrist elke ruimte met de heerlijke frisse geur van citrus...</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €9,50</button>
+                <button data-frequency="biweekly">Tweewekelijks: €12,00</button>
+                <button data-frequency="monthly">Maandelijks: €16,00</button>
+                <button onclick="addToCart('Allesreiniger Spray')">In winkelwagen</button>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item-card">
+            <img src="https://media.s-bol.com/50RyrDvYrM2X/Oy6Q5Y/550x569.jpg" alt="Schoonmaakdoekjes">
+            <h4 class="product-title">Schoonmaakdoekjes</h4>
+            <p class="product-description">Verwijderen 99,9% van de bacteriën. Daarnaast verwijderen ze pollen, huisdierschilfers...</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €26</button>
+                <button data-frequency="biweekly">Tweewekelijks: €29</button>
+                <button data-frequency="monthly">Maandelijks: €32</button>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item-card">
+            <img src="https://m.media-amazon.com/images/I/71YXzKGSO6L._AC_SL1500_.jpg" alt="Afwasmiddel">
+            <h4 class="product-title">Afwasmiddel</h4>
+            <p class="product-description">Marcel's Green Soap Afwasmiddel, verrijkt met essentiële olie en parfum...</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €5</button>
+                <button data-frequency="biweekly">Tweewekelijks: €7</button>
+                <button data-frequency="monthly">Maandelijks: €9</button>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="item-card">
+            <img src="https://media.s-bol.com/BGAkLz0zD5BN/M8Wmg6G/550x538.jpg" alt="Schuursponsjes">
+            <h4 class="product-title">Schuursponsjes</h4>
+            <p class="product-description">Deze krasvrije, zachte sponsjes hebben een goede waterabsorptie...</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €20</button>
+                <button data-frequency="biweekly">Tweewekelijks: €22</button>
+                <button data-frequency="monthly">Maandelijks: €24</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Translations for the page
+        const translations = {
+            en: {
+                pageTitle: "Cleaning Products",
+                curatedText: "The most popular cleaning products right now.",
+                suggestionText: "Do you have suggestions for new items? Let us know!",
+                searchPlaceholder: "Search...",
+                category: "Cleaning",
+                product1Title: "All Purpose Cleaner Spray",
+                product1Desc: "It leaves a visible shine and refreshes any space with the delightful citrus scent. This effective cleaner removes the toughest stains, such as burned food, kitchen grease, or bathroom dirt.",
+                product2Title: "Cleaning Wipes",
+                product2Desc: "Removes 99.9% of bacteria. They also remove pollen, pet dander, and allergens brought by dust mites. They clean any surface in no time and are practical, safe, and effective.",
+                product3Title: "Dishwashing Liquid",
+                product3Desc: "Marcel's Green Soap Dishwashing Liquid, enriched with essential oils and fragrance, so washing dishes becomes a real 'scent experience'. Our dish soap contains no dyes, parabens, phosphates, chlorine, ammonia, or acids. It's packed with natural ingredients and is at least 97% biodegradable.",
+                product4Title: "Scouring Pads",
+                product4Desc: "These scratch-free, soft pads have excellent water absorption, and the high-quality green scouring layer on one side is designed to effortlessly remove grease and burned food. The excellent surface makes it particularly protective for surfaces like cars, motorbikes, and tiles."
+            },
+            nl: {
+                pageTitle: "Schoonmaakartikelen",
+                curatedText: "De populairste schoonmaakartikelen op dit moment.",
+                suggestionText: "Heeft u suggesties voor nieuwe artikelen? Geef dit dan graag aan ons door!",
+                searchPlaceholder: "Zoeken...",
+                category: "Schoonmaak",
+                product1Title: "Allesreiniger Spray",
+                product1Desc: "Het laat een zichtbare glans achter en verfrist elke ruimte met de heerlijke frisse geur van citrus...",
+                product2Title: "Schoonmaakdoekjes",
+                product2Desc: "Verwijderen 99,9% van de bacteriën. Daarnaast verwijderen ze pollen, huisdierschilfers...",
+                product3Title: "Afwasmiddel",
+                product3Desc: "Marcel's Green Soap Afwasmiddel, verrijkt met essentiële olie en parfum...",
+                product4Title: "Schuursponsjes",
+                product4Desc: "Deze krasvrije, zachte sponsjes hebben een goede waterabsorptie..."
+            }
+        };
+
+        // Function to change language
+        function setLanguage(lang) {
+            // Update page title and text for translation
+            document.getElementById("page-title").textContent = translations[lang].pageTitle;
+            document.getElementById("curated-text").textContent = translations[lang].curatedText;
+            document.getElementById("suggestion-text").textContent = translations[lang].suggestionText;
+            document.getElementById("searchBar").placeholder = translations[lang].searchPlaceholder;
+
+            // Update navigation link text
+            document.getElementById("cleaning-link").textContent = translations[lang].category;
+
+            // Update product titles and descriptions
+            const productTitles = document.querySelectorAll('.product-title');
+            const productDescriptions = document.querySelectorAll('.product-description');
+            productTitles[0].textContent = translations[lang].product1Title;
+            productDescriptions[0].textContent = translations[lang].product1Desc;
+            productTitles[1].textContent = translations[lang].product2Title;
+            productDescriptions[1].textContent = translations[lang].product2Desc;
+            productTitles[2].textContent = translations[lang].product3Title;
+            productDescriptions[2].textContent = translations[lang].product3Desc;
+            productTitles[3].textContent = translations[lang].product4Title;
+            productDescriptions[3].textContent = translations[lang].product4Desc;
+
+            // Store selected language in localStorage
+            localStorage.setItem('selectedLang', lang);
+        }
+
+        // On page load, apply the language from localStorage or default to Dutch
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectedLang = localStorage.getItem('selectedLang') || 'nl';
+            setLanguage(selectedLang);
+        });
+    </script>
+</body>
+</html>
+
